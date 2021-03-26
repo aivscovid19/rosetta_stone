@@ -1,6 +1,6 @@
 FROM python:3.8-buster
 
-WORKDIR /usr/source/etc/rabbitmq/
+WORKDIR /usr/app
 
 COPY worker/Pipfile .
 COPY worker/Pipfile.lock .
