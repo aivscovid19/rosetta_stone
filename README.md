@@ -3,6 +3,8 @@
 ## Overview
 We use the Google Pub/Sub API to handle job distribution, where each worker (subscriber) is given one URL to work on independently. When it finishes, Pub/Sub will send the subscriber another URL to mine. Both the sender (Publisher) and receiver (subscriber) sides of Pub/Sub need to run constantly, so each one has its own docker container to set up.
 
+![image](https://user-images.githubusercontent.com/18720629/112663243-5aa46200-8e37-11eb-814c-3957d01f5edd.png)
+
 ## Setup
 
 We are going to assume you're working in a [google cloud project (GCP)](https://cloud.google.com/), but you can follow similar steps at every point to set this up for a standalone linux server or any other organization of servers. You'll need to handle the google credentials however you do it - we'll need access to the bigquery and Pub/Sub APIs. Using GCP, go to the [bigquery page](https://console.cloud.google.com/bigquery) and click **Enable API**, and likewise for [Pub/Sub](https://console.cloud.google.com/cloudpubsub).
