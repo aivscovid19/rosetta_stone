@@ -16,7 +16,7 @@ then
 fi
 
 # Load sample table for integration tests
-
+bq mk $STATUS_DATASET
 bq load --autodetect $STATUS_TABLE_ID scielo.csv
 
 # Setup of PubSub topics
