@@ -14,7 +14,8 @@ If you're using the GCP Cloud Shell (recommended way), you may autohrize the API
 Copy this repo into your VM or Cloud Shell instance with:
 
 ```shell
-git clone -b feature/k8s https://github.com/aivscovid19/rosetta_stone.git
+git clone https://github.com/aivscovid19/rosetta_stone.git
+cd rosetta_stone
 ```
 
 # Quick Setup - Deploy Script
