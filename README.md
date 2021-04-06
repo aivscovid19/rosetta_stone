@@ -14,8 +14,7 @@ If you're using the GCP Cloud Shell (recommended way), you may autohrize the API
 Copy this repo into your VM or Cloud Shell instance with:
 
 ```shell
-git clone -b feature/k8s https://github.com/aivscovid19/data_pipeline.git
-cd data_pipeline/pubsub_workers_integrated
+git clone -b feature/k8s https://github.com/aivscovid19/rosetta_stone.git
 ```
 
 # Quick Setup - Deploy Script
